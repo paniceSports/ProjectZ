@@ -4,9 +4,9 @@ jobs:
   report:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v1
-    - name: Run Discord Webhook
+    - name: Check our Changes
+      uses: actions/changes
+    - name: Dev Changelogs
       uses: paniceSports/ProjectZ@main
       with:
         id: ${{ secrets.DISCORD_WEBHOOK_ID }}
